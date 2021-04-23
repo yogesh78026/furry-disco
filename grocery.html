@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Items</title>
+    <link rel="stylesheet" href="eathealthy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <div onclick="location.href='http://www.example.com';" style="cursor:pointer;"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        function stickyMenu() {
+            var sticky = document.getElementById('sticky');
+            if (window.pageYOffset > 220) {
+                sticky.classList.add('sticky');
+            }
+            else {
+                sticky.classList.remove('sticky');
+            }
+        }
+        window.onscroll = function () {
+            stickyMenu();
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="first">
+        <div class="page_title">Fresh & Healthy</div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu">
+                <li>Home</li>
+            </a>
+            <a href="#New offers" class="a-menu">
+                <li>New Offers</li>
+            </a>
+            <a href="#Vegetable" class="a-menu">
+                <li>Vegetables</li>
+            </a>
+            <a href="#Fruits" class="a-menu">
+                <li>Fruits</li>
+            </a>
+            <a href="#Dairy products" class="a-menu">
+                <li>Dairy products</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li>Contact Us</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li>My Cart</li>
+            </a>
+
+        </ul>
+
+
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Search...." name="Search" class="search-input" />
+                <button type="Submit"><i class="fa fa-Search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+
+    <div class ="Home row"> 
+        <div class = "col" onclick="location.href='vegetable.html';" style="cursor: pointer;">
+            <a href="#Vegetable">
+                <div class="Category">
+                    <img src="vegetablebackground.jpg" class="item-img">
+                    <div class=image-title></div>
+                    <a href="vegetable.html" target="_blank">Vegetables</a>
+                </div>
+            </a>
+        </div>
+        <div onclick="location.href='fruits.html';" style="cursor: pointer;">
+            <a href="#Fruits">
+                <div class="Category">
+                    <img src="fruitsbackground.jpg" class="item-img">
+                    <div class=image-title></div>
+                    <a href="fruits.html" target="_blank">Fruits</a>
+                </div>
+            </a>
+        </div>
+
+        <div onclick="location.href='dairy.html';" style="cursor: pointer;">
+            <a href="#Dairy products">
+                <div class="Category">
+                    <img src="Amulmilk.jpg" class="item-img">
+                    <div class=image-title></div>
+                    <a href="dairy.html" target="_blank">Dairy products</a>
+                </div>
+            </a>
+        </div>
+        <div onclick="location.href='newoffers.html';" style="cursor: pointer;">
+            <a href="#New offers">
+                <div class="Category">
+                    <img src=" Newoffers.jpg" class="item-img">
+                    <div class=image-title></div>
+                    <a href="newoffers.html" target="_blank">New offers</a>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            <div class="links">
+                <div>Get Social With Us:</div>
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <div>Payments Option:</div>
+                <ul>
+                    <li
+                        style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">
+                        CASHON DELIVERY</li>
+                    <!-- <li><a href="" class="a-links">Home Delivery Avaliable</a></li> -->
+                    <i class="fa fa-cc-mastercard" style="font-size:48px;color:red"></i><br>
+                    <i class="fa fa-credit-card" style="font-size:48px;color:blanchedalmond"></i>
+                    <i class="fa fa-paypal" style="font-size:48px;color:blueviolet"></i>
+                    <!-- <li><a href="" class="a-links">Self Pickup</a></li>
+                    <li><a href="" class="a-links"></a></li> -->
+                </ul>
+            </div>
+            <div class="links">
+                <div>Links</div>
+                <ul>
+                    <li><a href="" class="a-links">Contact Us</a></li>
+                    <li><a href="" class="a-links">FAQ</a></li>
+                    <li><a href="" class="a-links">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <i class="far fa-copyright fa-1x"></i> &#169; 2021 By Programmers Web Drive
+    </div>
+
+</body>
+
+</html>
